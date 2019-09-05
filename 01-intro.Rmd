@@ -1,0 +1,12 @@
+# Introduction {#intro}
+
+The package **bookdown**[@R-bookdown] was built on **knitr**[@R-knitr]. It aims to complement [Pandoc](http://pandoc.org) in the following aspects:
+
+- automatic numbering of figures and tables in the HTML output;
+- cross-references of figures and tables;
+- fine control of the appearance of figures 
+
+and to make it easy to produce books looking visually pleasant.
+
+To get started, the author provides a demo `bookdown-demo` on Github:[demo](https://github.com/rstudio/bookdown-demo). For RStudio 3.6.1, we can directly get this demo by creating a new R project(it may need to install the package `bookdown` first). This demo provides a good template to begin on. After this notes, I hope we are able to custom the demo as we want.   
+

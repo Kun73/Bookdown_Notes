@@ -1,0 +1,3 @@
+[
+["intro.html", "Chapter 1 Introduction", " Chapter 1 Introduction The package bookdown(Xie 2019a) was built on knitr(Xie 2019b). It aims to complement Pandoc in the following aspects: automatic numbering of figures and tables in the HTML output; cross-references of figures and tables; fine control of the appearance of figures and to make it easy to produce books looking visually pleasant. To get started, the author provides a demo bookdown-demo on Github:demo. For RStudio 3.6.1, we can directly get this demo by creating a new R project(it may need to install the package bookdown first). This demo provides a good template to begin on. After this notes, I hope we are able to custom the demo as we want. References "]
+]
