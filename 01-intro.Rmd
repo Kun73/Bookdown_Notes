@@ -10,3 +10,4 @@ and to make it easy to produce books looking visually pleasant.
 
 To get started, the author provides a demo `bookdown-demo` on Github:[demo](https://github.com/rstudio/bookdown-demo). For RStudio 3.6.1, we can directly get this demo by creating a new R project(it may need to install the package `bookdown` first). This demo provides a good template to begin on. After this notes, I hope we are able to custom the demo as we want.   
 
+A bookdown book is built on several `.Rmd` files(encoding in UTF-8), with each starting the charpter title with `# Charpter Title`. Suppose we have 
