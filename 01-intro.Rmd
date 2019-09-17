@@ -8,6 +8,23 @@ The package **bookdown**[@R-bookdown] was built on **knitr**[@R-knitr]. It aims 
 
 and to make it easy to produce books looking visually pleasant.
 
-To get started, the author provides a demo `bookdown-demo` on Github:[demo](https://github.com/rstudio/bookdown-demo). For RStudio 3.6.1, we can directly get this demo by creating a new R project(it may need to install the package `bookdown` first). This demo provides a good template to begin on. After this notes, I hope we are able to custom the demo as we want.   
+To get started, the author provides a demo `bookdown-demo` on Github:[demo](https://github.com/rstudio/bookdown-demo). For RStudio, we can directly get this demo by creating a new R project(it may need to install the package **bookdown** first). This demo provides a good template to begin on. After this notes, I hope we are able to custom the demo as we want.   
 
-A bookdown book is built on several `.Rmd` files(encoding in UTF-8), with each starting the charpter title with `# Charpter Title`. Suppose we have 
+A bookdown book is built on several `.Rmd`(or `.md`) files(encoding in UTF-8), with each starting the charpter title with `# Chapter Title`. By default,bookdown merges all Rmd files by the order of filenames ( that is why in the provided demo, the filenames are ordered). In addition, `index.Rmd`(if exists) will always be treated as the first and filenames starting with `_` are skipped. All these can be overided in `_bookdown.yml` by adding 
+```{}
+rmd_files : ["index.Rmd", "abstract.Rmd", "intro.Rmd"]
+```
+
+We can also custom the output files for different output format like the following.
+
+```{}
+rmd_files : 
+html : ["index.Rmd", "abstract.Rmd", "intro.Rmd"]
+latex : ["abstract.Rmd", "intro.Rmd"]
+```
+To build a book, we can just click the `Knit` button or `Build Book` button. Calling the function `bookdown::render_book()` can also be used, we may talk about this and its corresponding issues like creating `.yml` files later. 
+
+There are two ways that bookdown combines all those chapters, "Merger and Knit"(M-K) and "Knit and Merger"(K-M). In summary, in the latter situation, all charpters are isolated from each other(All chapters are run in different sessions). This leads to some problems like failling to refer things in other chapters. Anotehr thing to notice is that, **knitr** does not allow duplicate chunk labels. The default is M-K. To switch to K-M, we either use `render_book(...,new_session = TRUE)` or set `new_session:yes` in `_bookdown.yml`.
+
+
+
