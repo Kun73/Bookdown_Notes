@@ -24,7 +24,7 @@
 <meta name="author" content="Kun Huang" />
 
 
-<meta name="date" content="2019-09-04" />
+<meta name="date" content="2019-09-17" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -105,7 +105,9 @@
 <li>fine control of the appearance of figures</li>
 </ul>
 <p>and to make it easy to produce books looking visually pleasant.</p>
-<p>To get started, the author provides a demo <code>bookdown-demo</code> on Github:<a href="https://github.com/rstudio/bookdown-demo">demo</a>. For RStudio 3.6.1, we can directly get this demo by creating a new R project(it may need to install the package <code>bookdown</code> first). This demo provides a good template to begin on. After this notes, I hope we are able to custom the demo as we want.</p>
+<p>To get started, the author provides a demo <code>bookdown-demo</code> on Github:<a href="https://github.com/rstudio/bookdown-demo">demo</a>. For RStudio, we can directly get this demo by creating a new R project(it may need to install the package <strong>bookdown</strong> first). This demo provides a good template to begin on. After this notes, I hope we are able to custom the demo as we want.</p>
+<p>A bookdown book is built on several <code>.Rmd</code> files(encoding in UTF-8), with each starting the charpter title with <code># Charpter Title</code>. By default,bookdown merges all Rmd files by the order of filenames ( that is why in the provided demo, the filenames are ordered). In addition, <code>index.Rmd</code>(if exists) will always be treated as the first and filenames starting with <code>_</code> are skipped. All these can be overided in <code>_bookdown.yml</code> by adding</p>
+<pre><code>rmd_files : [&quot;index.Rmd&quot;, &quot;abstract.Rmd&quot;, &quot;intro.Rmd&quot;]</code></pre>
 
 </div>
 <h3>References</h3>
