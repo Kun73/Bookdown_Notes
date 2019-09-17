@@ -12,7 +12,7 @@ description: ""
 
 # Preface {-}
 
-These are notes after reading the book [bookdown: Authoring Books and Technical Documents with R Markdown](https://bookdown.org/yihui/bookdown/) writter by Yihui Xie. Although the original book is not overwhelming, this note is to make it more concise and friendly for the beginners(like myself). Moreover, this note will include those frequent used but not easy to remember or understand.  In shorts, you can regard it as a cheat sheet but more than a cheat sheet.
+These are notes after reading the book [bookdown: Authoring Books and Technical Documents with R Markdown](https://bookdown.org/yihui/bookdown/) written by Yihui Xie. Although the original book is not overwhelming, this note is to make it more concise and friendly for the beginners(like myself). Moreover, this note will include those frequent used but not easy to remember or understand.  In shorts, you can regard it as a cheat sheet but more than a cheat sheet.
 
 This book mainly follows the structure of the original book.
 
