@@ -1,3 +1,10 @@
 # Components
 
-Here is a review of existing methods.
+This chapter summaries the syntax of componnents of a book written in **bookdown**. The approach is based on Pandoc.
+
+
+## Markdown syntax
+
+### About Title
+
+- Use `#` to denote the title. 
