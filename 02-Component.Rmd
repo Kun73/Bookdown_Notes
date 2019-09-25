@@ -1,0 +1,10 @@
+# Components
+
+This chapter summaries the syntax of componnents of a book written in **bookdown**. The approach is based on Pandoc.
+
+
+## Markdown syntax
+
+### About Title
+
+- Use `#` to denote the title. 
